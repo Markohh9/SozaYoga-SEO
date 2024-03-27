@@ -1,14 +1,33 @@
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
+
     /* Navbar */
     .navbar {
         padding: 0 32px;
     }
-/* Banner Image */
 
+    /* Banner Image */
 
-    
-    
-    
+    .item .content {
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 96px;
+        left: 0;
+    }
+
+    .slide .item:nth-child(3) {
+        top: 60%;
+        left: 25%;
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(20% + 200px);
+        top: 58%;
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(11% + 440px);
+        top: 56%;
+    }
 
 }
