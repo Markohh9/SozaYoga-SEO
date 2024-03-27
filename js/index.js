@@ -43,12 +43,36 @@ document.addEventListener("DOMContentLoaded", function () {
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 
-next.addEventListener('click', function(){
+next.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').appendChild(items[0])
 })
 
-prev.addEventListener('click', function(){
+prev.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
+
+
+
+
+
+/* Btn scroll to top */
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+window.addEventListener("scroll", () => {
+    // Afficher le bouton lorsque la page est défilée de 400 pixels vers le bas
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+    // Faire défiler la page jusqu'en haut avec une animation de smooth scrolling
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+

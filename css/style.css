@@ -204,7 +204,7 @@
 .button button {
     width: 40px;
     height: 35px;
-    border-radius: 15px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
     margin: 0 5px;
@@ -261,3 +261,66 @@ a.my-button:active {
     height: 700px;
     width: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button Scroll to top */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b57edc;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    animation: arrowBounce 2s infinite alternate;
+    border: 1px solid white;
+  }
+  
+  @keyframes arrowBounce {
+    0% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
+  #scrollToTopBtn:hover {
+    opacity: 0.7;
+    animation-play-state: paused;
+  }
