@@ -162,6 +162,7 @@
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
     font-family: 'Dancing Script';
+    font-weight: 400;
 }
 
 .content .des {
