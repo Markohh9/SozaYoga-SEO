@@ -73,17 +73,25 @@ scrollToTopBtn.addEventListener("click", () => {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
     let title = document.querySelector('.title-page');
     let initialSize = 24;
-    let finalSize = 128;
+    let finalSize = window.innerWidth < 768 ? 72 : 128; // Utilisation de 72px pour les appareils mobiles
     let scrollThreshold = 600;
+    
     window.addEventListener("scroll", function () {
         let scrollPosition = window.scrollY;
         let currentSize = initialSize + (finalSize - initialSize) * (scrollPosition / scrollThreshold);
         currentSize = Math.max(initialSize, Math.min(finalSize, currentSize));
         title.style.fontSize = currentSize + "px";
     });
+    
+    // Mise à jour de la taille finale lors du redimensionnement de la fenêtre
+    window.addEventListener("resize", function () {
+        finalSize = window.innerWidth < 768 ? 72 : 128;
+    });
 });
+
 
 
