@@ -50,48 +50,46 @@ next.addEventListener('click', function () {
 
 prev.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+    document.querySelector('.slide').prepend(items[items.length - 1])
 })
 
 
 /* Btn scroll to top */
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 window.addEventListener("scroll", () => {
-    // Afficher le bouton lorsque la page est défilée de 400 pixels vers le bas
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         scrollToTopBtn.style.display = "block";
     } else {
         scrollToTopBtn.style.display = "none";
     }
 });
-
 scrollToTopBtn.addEventListener("click", () => {
-    // Faire défiler la page jusqu'en haut avec une animation de smooth scrolling
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
 
-
+/* Title Anim */
 document.addEventListener("DOMContentLoaded", function () {
     let title = document.querySelector('.title-page');
     let initialSize = 24;
-    let finalSize = window.innerWidth < 768 ? 72 : 128; // Utilisation de 72px pour les appareils mobiles
+    let finalSize = window.innerWidth < 768 ? 72 : 128;
     let scrollThreshold = 600;
-    
-    window.addEventListener("scroll", function () {
+    function updateTitleSize() {
         let scrollPosition = window.scrollY;
         let currentSize = initialSize + (finalSize - initialSize) * (scrollPosition / scrollThreshold);
         currentSize = Math.max(initialSize, Math.min(finalSize, currentSize));
         title.style.fontSize = currentSize + "px";
-    });
-    
-    // Mise à jour de la taille finale lors du redimensionnement de la fenêtre
+    }
+    updateTitleSize();
+    window.addEventListener("scroll", updateTitleSize);
     window.addEventListener("resize", function () {
         finalSize = window.innerWidth < 768 ? 72 : 128;
+        updateTitleSize();
     });
 });
+
 
 
 
