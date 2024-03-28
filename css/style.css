@@ -259,12 +259,14 @@ a.my-button:active {
 /* Title Section */
 
 .background-banner-img {
-    background-color: white;
+    background-color: #fefee2;
     height: 900px;
     width: auto;
     padding: 32px 32px 64px 32px;
     align-content: flex-end;
 }
+
+
 
 .title-page{
     margin: auto;
