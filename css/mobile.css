@@ -42,8 +42,14 @@
 
     .container{
         width: 100%;
-
-
+        position: relative;
+        margin-top: 300px;
     }
+
+    .background-banner-img{
+        margin-top: -300px;
+        height: auto;
+    }
+
 
 }

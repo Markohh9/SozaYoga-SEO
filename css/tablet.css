@@ -49,6 +49,27 @@
     text-align: center;
     }
 
+
+    .slide .item:nth-child(5) {
+        display: none;
+    }
+
+    .content .name {
+        width: auto;
+        margin: auto;
+    }
+
+    .slide .item:nth-child(1) {
+        display: none;
+    }
+
+    .slide .item:nth-child(2) {
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
     
 
     
