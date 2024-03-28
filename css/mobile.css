@@ -16,18 +16,34 @@
     }
 
     .slide .item:nth-child(3) {
-        top: 60%;
-        left: 25%;
+        display: none;
     }
 
     .slide .item:nth-child(4) {
-        left: calc(20% + 200px);
-        top: 58%;
+        display: none;
     }
 
     .slide .item:nth-child(5) {
-        left: calc(11% + 440px);
-        top: 56%;
+        display: none;
+    }
+
+    .content .name {
+        width: auto;
+        margin: auto;
+    }
+
+    .slide .item:nth-child(1) {
+        display: none;
+    }
+
+    .slide .item:nth-child(2) {
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        top: 45%;
+
     }
 
 }

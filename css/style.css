@@ -122,11 +122,11 @@
 }
 
 .slide .item:nth-child(4) {
-    left: calc(50% + 220px);
+    left: calc(40% + 220px);
 }
 
 .slide .item:nth-child(5) {
-    left: calc(50% + 440px);
+    left: calc(30% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
