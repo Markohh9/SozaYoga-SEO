@@ -54,9 +54,6 @@ prev.addEventListener('click', function () {
 })
 
 
-
-
-
 /* Btn scroll to top */
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 window.addEventListener("scroll", () => {
@@ -75,4 +72,18 @@ scrollToTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let title = document.querySelector('.title-page');
+    let initialSize = 24;
+    let finalSize = 128;
+    let scrollThreshold = 600;
+    window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+        let currentSize = initialSize + (finalSize - initialSize) * (scrollPosition / scrollThreshold);
+        currentSize = Math.max(initialSize, Math.min(finalSize, currentSize));
+        title.style.fontSize = currentSize + "px";
+    });
+});
+
 
