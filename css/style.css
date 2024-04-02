@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     scroll-behavior: smooth;
-    
-    
+
+
 }
 
 /* Navbar */
@@ -212,13 +212,16 @@
 .button button {
     width: 40px;
     height: 35px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
     margin: 0 5px;
     border: 1px solid white;
     transition: 0.3s;
-    background: #b57edc;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+
 }
 
 .button i {
@@ -226,7 +229,7 @@
 }
 
 .button button:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #9749a1;
 }
 
 .button button:active {
@@ -246,10 +249,19 @@ a.my-button {
     border-radius: 45px;
     display: inline-block;
     transition: 0.3s;
+    border: 1px solid white;
+    transition: 0.3s;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 a.my-button:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #9749a1;
 }
 
 a.my-button:active {
@@ -268,7 +280,7 @@ a.my-button:active {
 
 
 
-.title-page{
+.title-page {
     margin: auto;
     width: auto;
     height: auto;
@@ -281,20 +293,32 @@ a.my-button:active {
     color: #b57edc;
 }
 
+.title-style {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 96px;
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lobster", sans-serif;
+}
+
 
 /* Prestation */
 #Prestation {
     background-color: #b57edc;
     height: 700px;
     width: auto;
-    
+
 }
 
 
 
 
 /* Qui suis-je? */
-#Quisuisje{
+#Quisuisje {
     background-color: white;
     height: 700px;
     width: auto;
@@ -304,16 +328,107 @@ a.my-button:active {
 
 
 /* FAQ */
-#Faq{
+#Faq {
     background-color: #b57edc;
-    height: 700px;
+    height: auto;
     width: auto;
+    padding: 48px 36px 48px 36px;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.faq.active {
+    border: none;
+}
+
+.accordion {
+    background-color: white;
+    color: #b57edc;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #f1f7f5;
+}
+
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+.pannel p {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-family: Montserrat;
+}
+
+.astuces {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 32px;
+    align-items: center
+}
+
+.astuce-button {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.astuce-button:hover {
+    background-color: #9749a1;
+}
+
+
+.astuce-section {
+    display: none;
 }
 
 
 
 /* Offresettarifs */
-#Offresettarifs{
+#Offresettarifs {
     background-color: white;
     height: 700px;
     width: auto;
@@ -322,7 +437,7 @@ a.my-button:active {
 
 
 /* Contact */
-#Contact{
+#Contact {
     background-color: #b57edc;
     height: 700px;
     width: auto;
@@ -331,24 +446,24 @@ a.my-button:active {
 
 
 /* Footer */
-#footer{
-        background-color: #b57edc;
-        height: auto;
-        width: auto;
-        border-top: 2px solid  white;
-        display: flex;
-        align-items: center;
-        padding: 36px 16px 48px 16px;
+#footer {
+    background-color: #b57edc;
+    height: auto;
+    width: auto;
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 36px 16px 48px 16px;
 }
 
-.footer-row{
+.footer-row {
     display: flex;
     justify-content: space-between;
     gap: 160px;
     align-items: flex-start
 }
 
-.right-footer{
+.right-footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -358,23 +473,23 @@ a.my-button:active {
     justify-content: center
 }
 
-.logo-reseau-row{
+.logo-reseau-row {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.logo-footer-reseaux{
+.logo-footer-reseaux {
     width: 50px;
     height: auto;
 }
 
-.reseau-section{
+.reseau-section {
     width: 50px;
     height: auto;
 }
 
-.right-footer-third{
+.right-footer-third {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -395,7 +510,7 @@ a.my-button:active {
     font-weight: 600;
 }
 
-.footer-cc{
+.footer-cc {
     display: flex;
     flex-direction: column;
     color: white;
@@ -449,18 +564,29 @@ a.my-button:active {
     transition: opacity 0.3s;
     animation: arrowBounce 2s infinite alternate;
     border: 1px solid white;
-  }
-  
-  @keyframes arrowBounce {
+    border: 1px solid white;
+    transition: 0.3s;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@keyframes arrowBounce {
     0% {
-      transform: translateY(-5px);
+        transform: translateY(-5px);
     }
+
     100% {
-      transform: translateY(5px);
+        transform: translateY(5px);
     }
-  }
-  
-  #scrollToTopBtn:hover {
+}
+
+#scrollToTopBtn:hover {
     opacity: 0.7;
     animation-play-state: paused;
-  }
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #9749a1;
+}

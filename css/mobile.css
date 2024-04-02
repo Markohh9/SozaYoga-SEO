@@ -52,4 +52,14 @@
     }
 
 
+
+
+
+
+    /* FAQ */
+
+    .astuces{
+        flex-direction: column;
+    }
+
 }
