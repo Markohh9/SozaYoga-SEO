@@ -284,12 +284,125 @@ a.my-button:active {
 
 /* Prestation */
 #Prestation {
-    background-color: red;
+    background-color: #b57edc;
     height: 700px;
     width: auto;
     
 }
 
+
+
+
+/* Qui suis-je? */
+#Quisuisje{
+    background-color: white;
+    height: 700px;
+    width: auto;
+}
+
+
+
+
+/* FAQ */
+#Faq{
+    background-color: #b57edc;
+    height: 700px;
+    width: auto;
+}
+
+
+
+/* Offresettarifs */
+#Offresettarifs{
+    background-color: white;
+    height: 700px;
+    width: auto;
+}
+
+
+
+/* Contact */
+#Contact{
+    background-color: #b57edc;
+    height: 700px;
+    width: auto;
+    padding: 20px;
+}
+
+
+/* Footer */
+#footer{
+        background-color: #b57edc;
+        height: auto;
+        width: auto;
+        border-top: 2px solid  white;
+        display: flex;
+        align-items: center;
+        padding: 36px 16px 48px 16px;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    align-items: flex-start
+}
+
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 600;
+    justify-content: center
+}
+
+.logo-reseau-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-footer-reseaux{
+    width: 50px;
+    height: auto;
+}
+
+.reseau-section{
+    width: 50px;
+    height: auto;
+}
+
+.right-footer-third{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center
+}
+
+.right-footer-third a {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+
+.right-footer-third p {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.footer-cc{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 400;
+    font-family: Montserrat;
+    gap: 8px;
+}
 
 
 
