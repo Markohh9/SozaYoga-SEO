@@ -266,14 +266,74 @@ a.my-button:active {
     transform: scale(0.95);
 }
 
-/* Title Section */
+/* Button Under Image Banner */
+
+.banner-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center
+}
 
 .background-banner-img {
     background-color: #fefee2;
-    height: 900px;
+    height: 800px;
     width: auto;
-    padding: 32px 32px 64px 32px;
+    padding: 32px 32px 76px 32px;
     align-content: flex-end;
+}
+
+
+.button-banner-1 {
+  background-color: #b57edc;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-banner-1:focus {
+  outline: 0;
+}
+
+.button-banner-1:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-banner-1:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-banner-1 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -304,7 +364,20 @@ a.my-button:active {
     text-align: center;
 }
 
-.txt-style{
+.title-style-second {
+    color: #b57edc;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 96px;
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Abril Fatface", serif;
+    text-align: center;
+}
+
+.txt-style {
     color: white;
     font-family: Montserrat;
     font-weight: 400;
@@ -348,6 +421,13 @@ a.my-button:active {
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
     width: 100%;
+}
+
+.txt-presta-desc {
+    display: flex;
+    font-family: Montserrat;
+    color: white;
+    font-size: 16px;
 }
 
 @media(min-width: 540px) {
@@ -441,8 +521,9 @@ a.my-button:active {
 /* Qui suis-je? */
 #Quisuisje {
     background-color: white;
-    height: 700px;
+    height: auto;
     width: auto;
+    padding: 48px 36px 48px 36px;
 }
 
 
@@ -450,7 +531,7 @@ a.my-button:active {
 
 /* FAQ */
 #Faq {
-    background-color: #b57edc;
+    background-color: white;
     height: auto;
     width: auto;
     padding: 48px 36px 48px 36px;
@@ -466,8 +547,8 @@ a.my-button:active {
 }
 
 .accordion {
-    background-color: white;
-    color: #b57edc;
+    background-color: #b57edc;
+    color: white;
     cursor: pointer;
     font-size: 1.2rem;
     width: 100%;
@@ -489,19 +570,18 @@ a.my-button:active {
 
 .active,
 .accordion:hover {
-    background-color: #f1f7f5;
+    background-color: #5E5DF0;
 }
 
 .pannel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
     overflow: hidden;
-    background-color: #f1f7f5;
+    background-color: #b57edc;
     display: none;
 }
 
 .pannel p {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     line-height: 1.4;
     font-family: Montserrat;
@@ -550,9 +630,10 @@ a.my-button:active {
 
 /* Offresettarifs */
 #Offresettarifs {
-    background-color: white;
-    height: 700px;
+    background-color: #b57edc;
+    height: auto;
     width: auto;
+    padding: 48px 36px 48px 36px;
 }
 
 
@@ -571,9 +652,9 @@ a.my-button:active {
     justify-content: center;
     align-items: center;
 
-  }
-  
-  .container-form form {
+}
+
+.container-form form {
     width: 670px;
     height: 600px;
     display: flex;
@@ -583,16 +664,18 @@ a.my-button:active {
     backdrop-filter: blur(30px);
     flex-wrap: wrap;
     padding: 16px;
-  }
-  .container-form form h1 {
+}
+
+.container-form form h1 {
     color: #fff;
     font-weight: 700;
     line-height: 2;
     margin-top: 20px;
     width: 500px;
     text-align: center;
-  }
-  .container-form form input {
+}
+
+.container-form form input {
     width: 300px;
     height: 50px;
     padding-left: 10px;
@@ -604,22 +687,26 @@ a.my-button:active {
     border-bottom: 2px solid #fff;
     color: #fff;
     font-family: Montserrat;
-  }
-  .container-form form input::placeholder {
+}
+
+.container-form form input::placeholder {
     color: #fff;
     font-family: Montserrat;
-  }
-  .container-form form #lastName,
-  .container-form form #mobile {
+}
+
+.container-form form #lastName,
+.container-form form #mobile {
     margin-left: 20px;
-  }
-  .container-form form h4 {
+}
+
+.container-form form h4 {
     color: #fff;
     font-weight: 300;
     width: 600px;
     margin-top: 20px;
-  }
-  .container-form form textarea {
+}
+
+.container-form form textarea {
     background: none;
     border: none;
     border-bottom: 2px solid #fff;
@@ -633,12 +720,20 @@ a.my-button:active {
     min-width: 620px;
     max-width: 620px;
     font-family: Montserrat;
+    opacity: 1;
+}
 
-  }
-  .container-form form h4 {
+.container-form form textarea::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: Montserrat;
+}
+
+.container-form form h4 {
     font-size: 20px;
-  }
-  .container-form form #button-form {
+}
+
+.container-form form #button-form {
     border: none;
     background: #fff;
     border-radius: 5px;
@@ -651,14 +746,14 @@ a.my-button:active {
     padding: 0;
     margin-bottom: 30px;
     transition: 0.3s;
-  }
-  
-  .container-form form #button-form:hover{
-      background: #000;
-      color: #fff;
-      transition: .5s ease-in-out;
-      cursor: pointer;
-  }
+}
+
+.container-form form #button-form:hover {
+    background: #000;
+    color: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
 
 
 

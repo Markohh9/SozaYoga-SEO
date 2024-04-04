@@ -141,23 +141,3 @@ scrollToTopBtn.addEventListener("click", () => {
     });
 });
 
-/* Title Anim */
-document.addEventListener("DOMContentLoaded", function () {
-    let title = document.querySelector('.title-page');
-    let initialSize = 24;
-    let finalSize = window.innerWidth < 768 ? 72 : 128;
-    let scrollThreshold = 600;
-
-    function updateTitleSize() {
-        let scrollPosition = window.scrollY;
-        let currentSize = initialSize + (finalSize - initialSize) * (scrollPosition / scrollThreshold);
-        currentSize = Math.max(initialSize, Math.min(finalSize, currentSize));
-        title.style.fontSize = currentSize + "px";
-    }
-    updateTitleSize();
-    window.addEventListener("scroll", updateTitleSize);
-    window.addEventListener("resize", function () {
-        finalSize = window.innerWidth < 768 ? 72 : 128;
-        updateTitleSize();
-    });
-});

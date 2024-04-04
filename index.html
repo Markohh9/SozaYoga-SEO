@@ -26,10 +26,10 @@
         <a href="#" class="logo"><img src="./img/LOGO.png" alt="logo sozayoga Nancy" /></a>
         <ul class="navbar-link">
             <li><a href="#Accueil" class="selected">Accueil</a></li>
-            <li><a href="#Prestation">Préstations</a></li>
+            <li><a href="#Prestation">Prestations</a></li>
             <li><a href="#Quisuisje">Qui-suis-je</a></li>
-            <li><a href="#Faq">FAQ</a></li>
             <li><a href="#Offresettarifs">Offres et Tarifs</a></li>
+            <li><a href="#Faq">FAQ</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
@@ -83,7 +83,12 @@
     </div>
 
     <div class="background-banner-img" id="banner-background">
-        <h1 class="title-page">SozaYoga</h1>
+
+        <div class="banner-button">
+            <button class="button-banner-1" role="button">Button</button>
+            <button class="button-banner-1" role="button">Button</button>
+            <button class="button-banner-1" role="button">Button</button> 
+        </div>
     </div>
 
 
@@ -95,6 +100,7 @@
     <section class="hero-section" id="Prestation">
         <h2 class="title-style">Prestations</h2>
         <p class="txt-style">Je vous enseigne différents types de Yoga:</p>
+        <p class="txt-presta-desc">Yoga en Cours Individuel</p>
         <div class="card-grid">
             <a class="card" href="#">
                 <div class="card__background"
@@ -136,17 +142,74 @@
                         <div class="card__description">Description</div>
                     </div>
                 </a>
-                <div>
+        </div>
+        <p class="txt-presta-desc">Yoga en Cours Collectif</p>
+        <div class="card-grid">
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Category</p>
+                    <p3 class="card__heading">Yoga</p3>
+                    <div class="card__description">Description</div>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Category</p>
+                    <p3 class="card__heading">Yoga</p3>
+                    <div class="card__description">Description</div>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Category</p>
+                    <p3 class="card__heading">Yoga</p3>
+                    <div class="card__description">Description</div>
+                </div>
+                </li>
+                <a class="card" href="#">
+                    <div class="card__background"
+                        style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                    </div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <p3 class="card__heading">Yoga</p3>
+                        <div class="card__description">Description</div>
+                    </div>
+                </a>
+        </div>
     </section>
 
 
 
 
-    <section id="Quisuisje"></section>
+    <section id="Quisuisje">
+
+        <h3 class="title-style-second">Qui Suis-Je</h3>
+
+    </section>
+
+    
+
+
+
+    <section id="Offresettarifs">
+
+        <h4 class="title-style">Offres et Tarifs</h4>
+
+    </section>
 
 
     <section id="Faq">
-        <h4 class="title-style">FAQs</h4>
+        <h5 class="title-style-second">FAQs</h5>
         <div class="astuces">
             <button class="astuce-button" data-target="Astuce1">Astuce 1</button>
             <button class="astuce-button" data-target="Astuce2">Astuce 2</button>
@@ -374,23 +437,21 @@
     </section>
 
 
-    <section id="Offresettarifs"></section>
-
 
     <section id="Contact">
-        <h5 class="title-style">Contactez Moi</h5>
+        <h6 class="title-style">Contactez Moi</h6>
         <div class="container-form">
             <form>
-              <input type="text" id="firstName" placeholder="First Name" required />
-              <input type="text" id="lastName" placeholder="Last Name" required />
-              <input type="email" id="email" placeholder="Email" required />
-              <input type="text" id="mobile" placeholder="Mobile" required />
-              <textarea id="message" placeholder="Type Your Message Here..." required></textarea>
-              <input type="submit" value="Send" id="button-form" />
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <input type="text" id="lastName" placeholder="Last Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="text" id="mobile" placeholder="Mobile" required />
+                <textarea id="message" placeholder="Type Your Message Here..." required></textarea>
+                <input type="submit" value="Send" id="button-form" />
             </form>
-          </div>
+        </div>
     </section>
-    
+
 
 
 
