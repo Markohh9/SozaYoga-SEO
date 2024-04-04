@@ -1,5 +1,6 @@
 @media screen and (max-width: 768px) {
 
+    
     /* Navbar */
     .navbar {
         padding: 0 32px;
@@ -40,17 +41,26 @@
         width: 100%;
     }
 
-    .container{
+    .container {
         width: 100%;
         position: relative;
         margin-top: 300px;
     }
 
-    .background-banner-img{
+    .background-banner-img {
         margin-top: -300px;
         height: auto;
     }
 
+    /* Title */
+
+    .title-style {
+        font-size: 48px;
+    }
+
+    .title-style-second {
+        font-size: 48px;
+    }
 
 
 
@@ -58,8 +68,28 @@
 
     /* FAQ */
 
-    .astuces{
+    .astuces {
         flex-direction: column;
+    }
+
+
+    /* Contact */
+
+    .container-form form {
+        width: 100%;
+    }
+
+    .container-form form input {
+        width: 100%;
+    }
+
+    .container-form form #lastName,
+    .container-form form #mobile {
+        margin-left: 0;
+    }
+
+    .container-form form textarea {
+        min-width: 100%;
     }
 
 }
