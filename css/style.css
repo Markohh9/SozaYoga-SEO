@@ -542,7 +542,7 @@ a.my-button:active {
     margin: 10px 0;
 }
 
-.faq.active {
+.faq.active2 {
     border: none;
 }
 
@@ -568,7 +568,7 @@ a.my-button:active {
 
 }
 
-.active,
+.active2,
 .accordion:hover {
     background-color: #5E5DF0;
 }

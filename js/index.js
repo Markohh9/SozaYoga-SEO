@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const accordionButtons = document.querySelectorAll('.accordion');
     accordionButtons.forEach(button => {
         button.addEventListener('click', function () {
-            this.classList.toggle('active');
+            this.classList.toggle('active2');
             let panel = this.nextElementSibling;
             if (panel.style.display === 'block' || panel.style.display === '') {
                 panel.style.display = 'none';
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const accordionQuestions = document.querySelectorAll('.accordion');
     accordionQuestions.forEach(question => {
         question.addEventListener('click', function () {
-            this.classList.toggle('active');
+            this.classList.toggle('active2');
             let answer = this.nextElementSibling;
             if (answer.style.display === 'block') {
                 answer.style.display = 'none';
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const accordionButtons = document.querySelectorAll('.accordion');
 accordionButtons.forEach(button => {
     button.addEventListener('click', function () {
-        this.classList.toggle('active');
+        this.classList.toggle('active2');
         let panel = this.nextElementSibling;
         if (panel.style.display === 'block' || panel.style.display === '') {
             panel.style.display = 'none';
