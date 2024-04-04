@@ -774,7 +774,7 @@ a.my-button:active {
 .footer-row {
     display: flex;
     justify-content: space-between;
-    gap: 160px;
+    gap: 120px;
     align-items: flex-start
 }
 
