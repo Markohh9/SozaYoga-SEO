@@ -12,7 +12,7 @@
         margin: auto;
         text-align: center;
         position: relative;
-        top: 96px;
+        top: 196px;
         left: 0;
     }
 
@@ -50,6 +50,12 @@
     .background-banner-img {
         margin-top: -300px;
         height: auto;
+    }
+
+    .banner-button {
+        flex-direction: column;
+        width: 100%;
+        align-items: center
     }
 
     /* Title */
