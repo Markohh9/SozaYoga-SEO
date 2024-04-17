@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
 
-    
+
     /* Navbar */
     .navbar {
         padding: 0 32px;
@@ -50,6 +50,7 @@
     .background-banner-img {
         margin-top: -300px;
         height: auto;
+        padding-bottom: 32px;
     }
 
     .banner-button {
@@ -66,6 +67,15 @@
 
     .title-style-second {
         font-size: 48px;
+    }
+
+
+    /* Card Price */
+
+    .card-row-price {
+        flex-direction: column;
+        margin: auto;
+        width: 35vh;
     }
 
 
@@ -102,26 +112,26 @@
 
     /* Footer */
 
-    .footer-row{
+    .footer-row {
         flex-direction: column;
         align-items: center;
         gap: 60px;
         margin: auto;
     }
 
-    .right-footer{
+    .right-footer {
         text-align: center;
-            gap: 16px
+        gap: 16px
     }
 
-    .right-footer-third{
+    .right-footer-third {
         text-align: center;
-            gap: 16px
+        gap: 16px
     }
 
-    .footer-cc{
+    .footer-cc {
         text-align: center;
-            gap: 16px
+        gap: 16px
     }
 
 }
