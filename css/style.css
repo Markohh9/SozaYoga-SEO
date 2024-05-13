@@ -427,18 +427,19 @@ a.my-button:active {
     display: flex;
     font-family: Montserrat;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
+    text-align: center;
 }
 
 @media(min-width: 540px) {
     .card-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media(min-width: 960px) {
     .card-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -570,7 +571,7 @@ a.my-button:active {
 
 .active2,
 .accordion:hover {
-    background-color: #5E5DF0;
+    background-color: #9749a1;
 }
 
 .pannel {
@@ -643,11 +644,12 @@ a.my-button:active {
     justify-content: center;
     margin: auto;
     margin-top: 64px;
+    margin-bottom: 128px;
 }
 
 .card-price {
     background-color: white;
-    height: 50vh;
+    height: 55vh;
     width: 35vh;
     border-radius: 25px;
     border: #5E5DF0 solid 2px;
