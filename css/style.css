@@ -385,6 +385,7 @@ a.my-button:active {
     display: flex;
     text-align: center;
     justify-content: center;
+    width: 80%;
 }
 
 
